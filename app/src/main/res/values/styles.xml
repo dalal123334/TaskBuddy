@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+    <!-- Style for the top bar -->
+    <style name="TopBarStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Style for the "Today's Tasks" TextView -->
+    <style name="TodayTasksTextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the ImageButton -->
+    <style name="ImageButtonStyle">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- Style for the Floating Action Button -->
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="fabSize">normal</item>
+    </style>
+
+    <!-- Style for the Bottom Navigation Bar -->
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <resources>
+        <!-- Other styles -->
+
+        <style name="CustomCalendarView" parent="Widget.Material.CalendarView">
+            <item name="android:dateTextAppearance">@style/CalendarDateTextAppearance</item>
+            <item name="android:weekDayTextAppearance">@style/CalendarWeekDayTextAppearance</item>
+            <item name="android:headerTextAppearance">@style/CalendarHeaderTextAppearance</item>
+            <item name="android:state_selected">@drawable/calendar_selected_state</item>
+        </style>
+
+        <style name="CalendarDateTextAppearance" parent="TextAppearance.Material.Widget.CalendarView.Date">
+            <item name="android:textColor">#FFFFFF</item>
+        </style>
+
+        <style name="CalendarWeekDayTextAppearance" parent="TextAppearance.Material.Widget.CalendarView.WeekDay">
+            <item name="android:textColor">#FFFFFF</item>
+        </style>
+
+        <style name="CalendarHeaderTextAppearance" parent="TextAppearance.Material.Widget.CalendarView.Header">
+            <item name="android:textColor">#FFFFFF</item>
+        </style>
+    </resources>
+
+
+</resources>

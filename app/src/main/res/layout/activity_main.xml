@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="110dp"
+        android:text="How would you like to use TaskBuddy?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Choices container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="438dp"
+        android:orientation="vertical">
+
+        <!-- Personal choice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Icon for personal choice -->
+
+            <!-- Label for personal choice -->
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Personal icon"
+                android:src="@drawable/famille" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Personal"
+                android:textSize="18sp" />
+
+            <!-- Radio button for personal choice -->
+            <RadioButton
+                android:id="@+id/personalRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <!-- Work choice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Icon for work choice -->
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Work icon"
+                android:src="@drawable/work" />
+
+            <!-- Label for work choice -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Work"
+                android:textSize="18sp" />
+
+            <!-- Radio button for work choice -->
+            <RadioButton
+                android:id="@+id/workRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <!-- Education choice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Icon for education choice -->
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Education icon"
+                android:src="@drawable/apprendre" />
+
+            <!-- Label for education choice -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Education"
+                android:textSize="18sp" />
+
+            <!-- Radio button for education choice -->
+            <RadioButton
+                android:id="@+id/educationRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Continue button -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="Continue"
+        android:onClick="goToNextActivity" />
+
+</LinearLayout>
